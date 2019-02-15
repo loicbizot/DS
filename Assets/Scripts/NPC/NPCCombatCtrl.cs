@@ -16,16 +16,16 @@ public class NPCCombatCtrl : EntityCtrl {
 
     public override void ActiveTurn(BattleHandler handler)
     {
-        //throw new System.NotImplementedException();
         isTurn = true;
         battleHandler = handler;
     }
 
     public override void EndTurn()
     {
-        //throw new System.NotImplementedException();
         isTurn = false;
-        battleHandler = null;
+        battleHandler.NextTurn();
+        EmptyATM();
+        //battleHandler = null;
     }
 
     public void Do()
@@ -45,6 +45,8 @@ public class NPCCombatCtrl : EntityCtrl {
         // choix de la cible
         // Action action = IA.ChooseAction();
         // action.perform()
+
+        EndTurn();
 
     }
 

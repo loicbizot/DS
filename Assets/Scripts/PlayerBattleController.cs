@@ -41,6 +41,8 @@ public class PlayerBattleController : EntityCtrl {
         if(!combatActive)
             return;
 
+
+
         Vector2 inputs = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         triggered = !activeState && inputs.magnitude > 0.8;
         activeState = inputs.magnitude > 0.8;

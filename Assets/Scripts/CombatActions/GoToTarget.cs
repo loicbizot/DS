@@ -6,7 +6,7 @@ public class GoToTarget{
 
     public IEnumerator GoToTargetThenRewind()
     {
-
+        yield return null;
     }
 
 }

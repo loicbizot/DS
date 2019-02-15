@@ -133,8 +133,10 @@ public class BattleHandler : MonoBehaviour {
         if(nextCtrl == null)
         {
             Debug.Log("Nani the fucc");
-            return; // IMOUTTATHIZ
+            return; 
         }
+
+        Debug.Log(nextCtrl.gameObject.name);
         
         foreach(EntityCtrl ctrlA in controllersA)
         {

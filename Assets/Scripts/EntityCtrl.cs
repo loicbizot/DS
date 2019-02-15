@@ -67,6 +67,11 @@ public abstract class EntityCtrl : MonoBehaviour {
         return current_ATM;
     }
 
+    public void EmptyATM()
+    {
+        current_ATM = 0;
+    }
+
     public abstract void ActiveTurn(BattleHandler handler);
     public abstract void EndTurn();
 
@@ -111,7 +116,6 @@ public class EntityPositionComparer : IComparer<EntityCtrl>
     }
 
 }
-
 public class EntityATMComparer : IComparer<EntityCtrl>
 {
 

@@ -29,6 +29,16 @@ public class ScrollingText : MonoBehaviour {
 
     }
 
+    public void Show()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        gameObject.SetActive(false);
+    }
+
     public void OnTextChange()
     {
 
